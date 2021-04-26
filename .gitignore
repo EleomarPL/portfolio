@@ -4,6 +4,7 @@
 .pnp.js
 
 # testing
+/src/img/test-image.jpg
 /coverage
 
 # production

@@ -35,11 +35,11 @@ const config = {
         include: /\.module\.css$/
       },
       {
-        test: /\.(svg)$/,
+        test: /\.(svg|woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?)$/,
         use: 'file-loader'
       },
       {
-        test: /\.png$/,
+        test: /\.(png|jpg)$/,
         use: [
           {
             loader: 'url-loader',

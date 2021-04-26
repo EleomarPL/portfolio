@@ -1,0 +1,40 @@
+:root {
+  --border-nav: rgb(129, 215, 218);
+  --hover-nav: rgb(26, 198, 204);;
+  --background-bottom-active: linear-gradient(180deg, #5eebfd 0%, #64e0ff 100%) no-repeat;
+}
+body {
+  background: linear-gradient(180deg, #fff 0%, #f8ffff 100%) no-repeat;
+}
+::-webkit-scrollbar {
+  width: 0.7rem;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--border-nav);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--hover-nav);
+}
+main{
+  display: block;
+  padding: 1rem;
+  margin-left: auto;
+
+  line-height: 1.5rem;
+  text-align: justify;
+  text-justify: inter-word;
+  letter-spacing: 0.01rem;
+
+  width: 77%;
+}
+
+@media screen and (max-width: 900px){
+  main{
+    padding: 1rem;
+    width: 100%;
+  }
+  
+}

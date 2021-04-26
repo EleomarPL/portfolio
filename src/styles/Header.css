@@ -1,0 +1,80 @@
+.navigation{
+  border-right: 5px solid var(--border-nav);
+  position: fixed;
+  height: 100%;
+  overflow-y: auto;
+}
+.container-image-me {
+  margin-top: 1rem;
+  width: 12rem;
+  height: 12rem;
+}
+.container-image-me > img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+
+  border-radius: 50%;
+}
+.card-icon {
+  color: black;
+  background: rgba(217, 217, 217, 0.67);
+  border-radius: 50px;
+
+  margin-right: 10px;
+  padding: 5px 15px;
+
+  transition: all .2s ease-in-out;
+}
+.hover-effect{
+  text-decoration: none;
+
+  transition: all .2s ease-in-out;
+}
+
+.hover-effect:hover{
+  transform: scale(1.1);
+}
+
+.card-icon:hover{
+  transform: scale(1.1);
+}
+
+@media screen and (max-width: 900px){
+  .navigation{
+    left: 0;
+    border: 0;
+    position: fixed;
+
+    transition: width 0.3s ease-out, opacity 0.3s ease-out
+  }
+  .navigation.desactive{
+    opacity: 0;
+    width: 0;
+    overflow: hidden;
+  }
+  .navigation.active{
+    width: 40%;
+    opacity: 1;
+  }
+  .menu-button > button {
+    border: 0;
+    background: var(--background-bottom-active);
+  }
+  .menu-button{
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    border-radius: 50%;
+    overflow: hidden;
+
+    font-size: 1.5rem;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.25);
+
+    transition: all .5s;
+  }
+  .menu-button:hover{
+    transform: scale(1.2);
+  }
+  
+}
