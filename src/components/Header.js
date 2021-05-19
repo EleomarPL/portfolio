@@ -6,7 +6,7 @@ import ImageTest from '../img/test-image.jpg';
 import { listIconContact, listNavigationOptions } from '../data/Header';
 
 import 'bootstrap-icons/font/bootstrap-icons.css';
-import '../styles/Header.css';
+import '../styles/header.css';
 
 const Header = () => {
   

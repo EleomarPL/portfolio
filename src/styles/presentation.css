@@ -1,0 +1,15 @@
+.presentation{
+  font-size: 1.1rem;
+}
+.my-photo{
+  padding-right: 1rem;
+  width: 50vw;
+
+}
+.my-photo > img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+
+  border-radius: 10%;
+}
