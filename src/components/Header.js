@@ -35,7 +35,7 @@ const Header = () => {
             Hola, soy un desarrolador Front-End, bienvenido a mi sitio web
             personal, espero y lo disfrutes.
           </p>
-          <section className="contact-icons d-flex flex-wrap justify-content-center">
+          <section className="d-flex flex-wrap justify-content-center">
             {
               listIconContact.map(( object, index ) =>
                 <ContactIcon
@@ -46,14 +46,13 @@ const Header = () => {
               )
             }
           </section>
-          <section className="pt-4 d-flex flex-column align-items-start">
+          <section className="pt-4 d-flex flex-column align-items-center">
             {
               listNavigationOptions.map((object, index) =>
                 <NavigationOptions
                   key={ index }
                   classNameIcon={ object.className }
                   href={ object.href }
-                  isColorDark={ true }
                   textOption={ object.textNavigation }
                 />
               )
@@ -69,14 +68,13 @@ const Header = () => {
                   <NavigationOptions
                     key={ index }
                     classNameIcon={ object.className }
-                    isColorDark={ false }
                     href={ object.href }
                     textOption={ object.textNavigation }
                   />
                 )
               }
             </section>
-            <section className="contact-icons mt-4 pt-4 pb-2 d-flex flex-wrap justify-content-center">
+            <section className="mt-4 pt-4 pb-2 d-flex flex-wrap justify-content-center">
               {
                 listIconContact.map(( object, index ) =>
                   <ContactIcon

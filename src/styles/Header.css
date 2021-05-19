@@ -1,5 +1,7 @@
 .navigation{
-  border-right: 5px solid var(--border-nav);
+  background: #091a2e;
+  left: 0;
+  border: 0;
   position: fixed;
   height: 100%;
   overflow-y: auto;
@@ -8,6 +10,7 @@
   margin-top: 1rem;
   width: 12rem;
   height: 12rem;
+  margin-bottom: 1rem;
 }
 .container-image-me > img {
   object-fit: cover;
@@ -42,8 +45,6 @@
 
 @media screen and (max-width: 900px){
   .navigation{
-    left: 0;
-    border: 0;
     position: fixed;
 
     transition: width 0.3s ease-out, opacity 0.3s ease-out

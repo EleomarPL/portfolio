@@ -1,15 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const NavigationOptions = ({ href, classNameIcon, textOption, isColorDark }) => {
+const NavigationOptions = ({ href, classNameIcon, textOption }) => {
   return (
-    <a className={
-      `hover-effect 
-        ${isColorDark
-      ? 'text-dark d-flex flex-wrap align-items-center'
-      : 'text-white d-flex flex-column justify-content-center'} 
-      text-decoration-none
-      ` } href={ href }
+    <a
+      className="text-white d-flex flex-column justify-content-center text-decoration-none "
+      href={ href }
     >
       <p className="card-icon text-center fs-4">
         <i className={ classNameIcon }></i>
