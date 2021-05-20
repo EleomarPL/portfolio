@@ -61,7 +61,7 @@ const Header = () => {
         </nav>
         :
         <Fragment>
-          <nav className="navigation desactive bg-dark pt-2" id="navigation-small-size">
+          <nav className="navigation desactive pt-2" id="navigation-small-size">
             <section className="pt-2 d-flex flex-column align-items-center">
               {
                 listNavigationOptions.map((object, index) =>

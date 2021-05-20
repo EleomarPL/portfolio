@@ -18,8 +18,7 @@ const NavigationOptions = ({ href, classNameIcon, textOption }) => {
 NavigationOptions.propTypes = {
   href: PropTypes.string.isRequired,
   classNameIcon: PropTypes.string.isRequired,
-  textOption: PropTypes.string.isRequired,
-  isColorDark: PropTypes.bool.isRequired
+  textOption: PropTypes.string.isRequired
 };
 
 export default NavigationOptions;

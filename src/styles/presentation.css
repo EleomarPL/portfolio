@@ -1,6 +1,12 @@
+.presentation{
+  position: relative;
+  margin-top: 2rem;
+}
 .my-photo{
-  padding-right: 1rem;
-  width: 50vw;
+  width: 15rem;
+  position: absolute;
+  left: 4rem;
+  bottom: -2rem;
 }
 .my-photo > img {
   object-fit: cover;
@@ -8,4 +14,27 @@
   height: 100%;
 
   border-radius: 10%;
+}
+.my-presentation{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: end;
+}
+@media screen and (max-width: 900px){
+  .presentation{ position: static; }
+  .my-photo{ position: static; }  
+}
+@media screen and (max-width: 768px){
+  .my-presentation{ align-items: flex-start; }
+  .presentation{
+    position: static;
+    margin-top: 0;
+  }
+  .my-photo{
+    position: static;
+    padding-bottom: 0.5rem;
+    right: 0;
+    bottom: 0;
+  }
 }

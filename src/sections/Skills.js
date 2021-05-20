@@ -7,7 +7,7 @@ import '../styles/skills.css';
 
 const Skills = () => {
   return (
-    <section className="mt-4 pt-4 mx-4">
+    <section className="skills mx-4">
       <SubtopicSection>Mis habilidades</SubtopicSection>
       <p className="mt-3 pb-4">
         No tengo suficiente experiencia laboral, pero estoy en constante
