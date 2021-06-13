@@ -25,7 +25,7 @@ const Header = () => {
 
   return (
     <Fragment>
-      { widthWindow >= 900 ?
+      { widthWindow > 900 ?
         <nav className="navigation d-flex flex-column align-items-center text-center" style={ {width: '23%'} }>
           <div className="container-image-me">
             <img src={ ImageTest } alt="Me" />

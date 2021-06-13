@@ -6,14 +6,14 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './styles/index.css';
 import Header from './components/Header';
 import GroupSection from './components/GroupSections';
+import Footer from './sections/Footer';
 
 const App = () => {
   return (
     <div className="container-fluid">
-      <div className="col-md-12">
-        <Header />
-        <GroupSection />
-      </div>
+      <Header />
+      <GroupSection />
+      <Footer />
     </div>
   );
 };
