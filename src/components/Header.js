@@ -2,7 +2,7 @@ import React, { Fragment, useEffect, useState } from 'react';
 import ContactIcon from './cards/ContactIcon';
 import NavigationOptions from './cards/NavigationOptios';
 
-import ImageTest from '../img/test-image.jpg';
+import myPhoto from '../img/myPhoto.jpg';
 import { listIconContact, listNavigationOptions } from '../data/header';
 
 import 'bootstrap-icons/font/bootstrap-icons.css';
@@ -28,7 +28,7 @@ const Header = () => {
       { widthWindow > 900 ?
         <nav className="navigation d-flex flex-column align-items-center text-center" style={ {width: '23%'} }>
           <div className="container-image-me">
-            <img src={ ImageTest } alt="Me" />
+            <img src={ myPhoto } alt="Me" />
           </div>
           <h3>Eleomar Pedro Lorenzo</h3>
           <p className="mt-2">
