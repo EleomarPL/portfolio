@@ -18,17 +18,17 @@ export const listIconContact = [
 ];
 export const listNavigationOptions = [
   {
-    'href': '#',
+    'href': '#presentation',
     'className': 'bi bi-person-fill',
     'textNavigation': 'Acerca de mi'
   },
   {
-    'href': '#',
+    'href': '#projects',
     'className': 'bi bi-code-square',
     'textNavigation': 'Proyectos'
   },
   {
-    'href': '#',
+    'href': '#contact',
     'className': 'bi bi-person-lines-fill',
     'textNavigation': 'Contacto'
   }

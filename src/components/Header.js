@@ -1,6 +1,6 @@
 import React, { Fragment, useEffect, useState } from 'react';
 import ContactIcon from './cards/ContactIcon';
-import NavigationOptions from './cards/NavigationOptios';
+import NavigationOptions from './cards/NavigationOptions';
 
 import myPhoto from '../img/myPhoto.jpg';
 import { listIconContact, listNavigationOptions } from '../data/header';

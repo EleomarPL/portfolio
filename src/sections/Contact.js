@@ -29,7 +29,7 @@ CustomText.propTypes = {
 
 const Contact = () => {
   return (
-    <section className="contact px-4">
+    <section className="contact px-4" id="contact">
       <SubtopicSection>Contacto</SubtopicSection>
       <p className="mt-3 pb-4">
         ¡Hola!!, ¿Te gustaría contactarme?, o ¿Quieres que colabore en

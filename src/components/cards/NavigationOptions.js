@@ -2,10 +2,18 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const NavigationOptions = ({ href, classNameIcon, textOption }) => {
+
+  const changeClassNav = () => {
+    let nav = document.getElementById('navigation-small-size');
+    nav.classList.toggle('active');
+    nav.classList.toggle('desactive');
+  };
+
   return (
     <a
       className="text-white d-flex flex-column justify-content-center text-decoration-none "
       href={ href }
+      onClick={ changeClassNav }
     >
       <p className="card-icon text-center fs-4">
         <i className={ classNameIcon }></i>

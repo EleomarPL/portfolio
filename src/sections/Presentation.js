@@ -5,7 +5,7 @@ import imageMe from '../img/myImage.jpg';
 
 const Presentation = () => {
   return (
-    <section className="px-4 presentation">
+    <section className="px-4 presentation" id="presentation">
       <div className="my-presentation">
         <h3>Eleomar Pedro Lorenzo</h3>
         <h4>Desarrollador web</h4>
