@@ -1,16 +1,24 @@
-import React from 'react';
-import Contact from '../sections/Contact';
+import React, {Suspense} from 'react';
 import Presentation from '../sections/Presentation';
-import Skills from '../sections/Skills';
-import Projects from '../sections/Projects';
+import SpinnerLoading from './common/SpinnerLoading';
+
+const Contact = React.lazy(() => import('../sections/Contact'));
+const Projects = React.lazy(() => import('../sections/Projects'));
+const Skills = React.lazy(() => import('../sections/Skills'));
 
 const GroupSection = () => {
   return (
     <main>
       <Presentation />
-      <Skills />
-      <Projects />
-      <Contact />
+      <Suspense fallback={ <SpinnerLoading /> }>
+        <Skills />
+      </Suspense>
+      <Suspense fallback={ <SpinnerLoading /> }>
+        <Projects />
+      </Suspense>
+      <Suspense fallback={ <SpinnerLoading /> }>
+        <Contact />
+      </Suspense>
     </main>
   );
 };

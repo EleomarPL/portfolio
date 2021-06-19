@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React, { Suspense } from 'react';
 
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -6,14 +6,18 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './styles/index.css';
 import Header from './components/Header';
 import GroupSection from './components/GroupSections';
-import Footer from './sections/Footer';
+import SpinnerLoading from './components/common/SpinnerLoading';
+
+const Footer = React.lazy(() => import('./sections/Footer'));
 
 const App = () => {
   return (
     <div className="container-fluid">
       <Header />
       <GroupSection />
-      <Footer />
+      <Suspense fallback={ <SpinnerLoading /> }>
+        <Footer />
+      </Suspense>
     </div>
   );
 };
