@@ -15,7 +15,10 @@ const Project = ({title, listOfTechnologies, nameImage, information, preview, re
   return (
     <article className="project">
       <div className="img-background">
-        <img src={ require(`../../img/projects/${nameImage === undefined ? 'inProgress.png' : nameImage}`).default } />
+        <img
+          src={ require(`../../img/projects/${nameImage === undefined ? 'inProgress.png' : nameImage}`).default }
+          alt={ nameImage }
+        />
       </div>
       <div className="p-4 information">
         <p style={ {'fontSize': '1.3rem', 'fontWeight': 'bold'} }>

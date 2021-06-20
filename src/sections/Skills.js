@@ -30,6 +30,7 @@ const Skills = () => {
                           `../img/skills/${img}.png`
                         ).default
                       }
+                      alt={ img }
                       key={ index }
                     />
                   )

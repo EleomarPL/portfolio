@@ -3,9 +3,10 @@
   margin-top: 2rem;
 }
 .my-photo{
-  width: 22%;
+  width: 12.5rem;
+  height: auto;
   position: absolute;
-  left: 1rem;
+  left: 0.5rem;
   bottom: -5.5rem;
 }
 .container-photo{ width: 25%; }
