@@ -16,7 +16,7 @@ const Project = ({title, listOfTechnologies, nameImage, information, preview, re
     <article className="project">
       <div className="img-background">
         <img
-          src={ require(`../../img/projects/${nameImage === undefined ? 'inProgress.png' : nameImage}`).default }
+          src={ require(`../../img/projects/${nameImage === undefined ? 'inProgress.webp' : nameImage}`).default }
           alt={ nameImage === undefined ? 'En proceso' : nameImage }
         />
       </div>

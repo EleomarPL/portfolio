@@ -2,7 +2,7 @@ export const listOfProjects = [
   {
     title: 'App de calificaciones',
     technologies: ['nodejs', 'express', 'js', 'bootstrap'],
-    nameImg: 'gestiocal.png',
+    nameImg: 'gestiocal.webp',
     information: 'Aprendí a autenticar usuarios en el backend, y manipular rutas en react. Implemente igual la comunicación entre backend y frontend mediante APIs Rest.',
     linkToRepository: [
       'https://github.com/EleomarPL/grade-control-frontend',
@@ -13,7 +13,7 @@ export const listOfProjects = [
   {
     title: 'Portafolio',
     technologies: ['react', 'js', 'bootstrap'],
-    nameImg: 'portfolio.png',
+    nameImg: 'portfolio.webp',
     information: 'Este es mi portafolio, espero que lo estés disfrutando, está hecho con ReactJS, JavaScript y Bootstrap5.',
     linkToRepository: 'https://github.com/EleomarPL/portfolio'
   },

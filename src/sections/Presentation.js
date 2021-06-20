@@ -1,7 +1,7 @@
 import React from 'react';
 
 import '../styles/presentation.css';
-import imageMe from '../img/myImage.jpg';
+import imageMe from '../img/myImage.webp';
 
 const Presentation = () => {
   return (

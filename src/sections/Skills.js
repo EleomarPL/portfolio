@@ -27,7 +27,7 @@ const Skills = () => {
                     <img
                       src={
                         require(
-                          `../img/skills/${img}.png`
+                          `../img/skills/${img}.webp`
                         ).default
                       }
                       alt={ img }
