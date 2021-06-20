@@ -14,9 +14,9 @@ const Question = ({ children }) => {
 };
 const CustomText = ({ children }) => {
   return (
-    <span className="fw-bold" style={ {color: '#ea5455'} }>
-      { ' ' + children }
-    </span>
+    <strong className="fw-bold text-decoration-underline">
+      <i>{ ' ' + children }</i>
+    </strong>
   );
 };
 
