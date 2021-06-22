@@ -40,7 +40,7 @@ Principalmente se construyeron con las tecnologías anteriores, aunque, cabe men
 
 ## Expresiones de Gratitud 🎁
 
-Si el proyecto te gusto, o te sirvio para aprender nuevas cosas, puedes agradecernos de la siguiente forma:
+Si el proyecto te gusto, o te sirvio para aprender nuevas cosas, puedes agradecer de la siguiente forma:
 
 - Coméntale a otros sobre este proyecto 📢
 - Regala una estrella a este proyecto ⭐
