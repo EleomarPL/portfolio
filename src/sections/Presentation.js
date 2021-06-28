@@ -7,8 +7,8 @@ const Presentation = () => {
   return (
     <section className="px-4 presentation" id="presentation">
       <div className="my-presentation">
-        <h3>Eleomar Pedro Lorenzo</h3>
-        <h4>Desarrollador web</h4>
+        <h1 style={ {fontSize: '1.75rem'} }>Eleomar Pedro Lorenzo</h1>
+        <h2 style={ {fontSize: '1.5rem'} }>Desarrollador web</h2>
       </div>
       <div className="row row-cols-md-2 align-items-center justify-content-end">
         <div className="container-photo">

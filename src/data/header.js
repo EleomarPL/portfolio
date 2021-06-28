@@ -4,7 +4,7 @@ export const listIconContact = [
     'className': 'bi bi-github'
   },
   {
-    'href': 'https://www.linkedin.com/in/eleomar-pedro-lorenzo-450378210/',
+    'href': 'https://www.linkedin.com/in/eleomar-pedro-lorenzo',
     'className': 'bi bi-linkedin'
   },
   {
