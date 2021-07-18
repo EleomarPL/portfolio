@@ -20,7 +20,9 @@ export const listOfProjects = [
   {
     title: 'Aprendamos Zapoteco Del Sur',
     technologies: ['react', 'js', 'bootstrap', 'electron'],
-    information: 'Aplicación de escritorio en progreso, está siendo creada en colaboración con demás programadores, usando las tecnologías ElectronJS, y ReactJS para las vistas, así como también Bootstrap5 para estilizar la aplicación.'
+    information: 'Aplicación de escritorio, creada en colaboración con demás programadores, usando las tecnologías ElectronJS, y ReactJS para las vistas, así como también Bootstrap5 para estilizar la aplicación.',
+    nameImg: 'learnZapoteco.webp',
+    linkToPreview: 'https://aprendamoszapoteco.github.io/'
   },
   {
     title: 'Personajes de Toy Story',
