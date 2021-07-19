@@ -43,6 +43,7 @@ const MobileDevice = ({ listIconContact, listNavigationOptions }) => {
       <div className="menu-button">
         <button type="button" onClick={ changeClassNav }>
           <i className="bi bi-list"></i>
+          <span className="visually-hidden-focusable">Menú</span>
         </button>
       </div>
     </Fragment>

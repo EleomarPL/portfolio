@@ -5,7 +5,7 @@ import '../styles/footer.css';
 const Footer = () => {
   return (
     <footer className="d-flex flex-wrap justify-content-center text-center">
-      <p>&#169; 2021, Creado con 💚💚 y por <span className="fw-bold">Eleomar Pedro Lorenzo</span></p>
+      <p>&#169; 2021, Creado con 💚💚 por <span className="fw-bold">Eleomar Pedro Lorenzo</span></p>
     </footer>
   );
 };

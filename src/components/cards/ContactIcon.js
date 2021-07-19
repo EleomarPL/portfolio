@@ -10,6 +10,7 @@ const ContactIcon = ({ href, classNameIcon }) => {
       target="_blank"
     >
       <i className={ classNameIcon }></i>
+      <span className="visually-hidden-focusable">{ classNameIcon.split(' ')[1].slice(3) }</span>
     </a>
   );
 };

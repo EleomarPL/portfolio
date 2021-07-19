@@ -48,6 +48,7 @@ const Contact = () => {
               key={ index }
             >
               <i className={ object.className }></i>
+              <span className="visually-hidden-focusable">{ object.className.split(' ')[1].slice(3) }</span>
             </a>
           )
         }
