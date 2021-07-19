@@ -16,8 +16,8 @@ const Projects = () => {
       </p>
       <div className="row row-cols-lg-2 g-4">
         { listOfProjects !== null &&
-          listOfProjects.map((informationProject, index) =>
-            <div className="d-flex flex-wrap justify-content-between" key={ index }>
+          listOfProjects.map( informationProject =>
+            <div className="d-flex flex-wrap justify-content-between" key={ informationProject.title }>
               <Project
                 title={ informationProject.title }
                 listOfTechnologies={ informationProject.technologies }
@@ -25,7 +25,6 @@ const Projects = () => {
                 information={ informationProject.information }
                 preview={ informationProject.linkToPreview }
                 repository={ informationProject.linkToRepository }
-                key={ index }
               />
             </div>
           )

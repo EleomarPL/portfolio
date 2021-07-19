@@ -3,14 +3,14 @@ import PropTypes from 'prop-types';
 
 const Project = ({title, listOfTechnologies, nameImage, information, preview, repository}) => {
   let styleByTechnology = {
-    html: 'btn-warning p-1 mx-2 mb-2',
-    css: 'btn-info p-1 mx-2 mb-2',
-    react: 'btn-primary p-1 mx-2 mb-2',
-    js: 'btn-warning p-1 mx-2 mb-2',
-    nodejs: 'btn-success p-1 mx-2 mb-2',
-    express: 'btn-light p-1 mx-2 mb-2',
-    bootstrap: 'btn-secondary p-1 mx-2 mb-2',
-    electron: 'btn-primary p-1 mx-2 mb-2'
+    html: 'btn-warning',
+    css: 'btn-info',
+    react: 'btn-primary',
+    js: 'btn-warning',
+    nodejs: 'btn-success',
+    express: 'btn-light',
+    bootstrap: 'btn-secondary',
+    electron: 'btn-primary'
   };
   return (
     <article className="project">
@@ -32,8 +32,8 @@ const Project = ({title, listOfTechnologies, nameImage, information, preview, re
             listOfTechnologies.map( technology =>
               <div
                 key={ technology }
-                className={ styleByTechnology[technology] + ' px-2' }
-                style={ {'borderRadius': '5px'} }
+                className={ styleByTechnology[technology] + ' p-1 mb-2 px-2' }
+                style={ {'borderRadius': '5px', marginRight: '1rem'} }
               >
                 <strong>{ technology }</strong>
               </div>

@@ -23,7 +23,7 @@ const Skills = () => {
             >
               <div className="img-skills d-flex align-items-center">
                 {
-                  object.images.map((img, index) =>
+                  object.images.map( img =>
                     <img
                       src={
                         require(
@@ -31,7 +31,7 @@ const Skills = () => {
                         ).default
                       }
                       alt={ img }
-                      key={ index }
+                      key={ img }
                     />
                   )
                 }
