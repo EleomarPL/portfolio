@@ -25,13 +25,15 @@
   justify-content: flex-end;
 }
 @media screen and (max-width: 1000px){
-  .my-photo{bottom: -2.5rem;} 
+  .my-photo{
+    bottom: -2.5rem;
+    width: 11rem;
+  } 
 }
 @media screen and (max-width: 900px){
   .presentation{ position: static; }
   .my-photo{
     left: 0;
-    width: 11rem;
     position: static;
   }
   .container-photo{ width: 30%; }

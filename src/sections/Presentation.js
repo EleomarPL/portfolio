@@ -5,7 +5,7 @@ import imageMe from '../img/myImage.webp';
 
 const Presentation = () => {
   return (
-    <section className="px-4 presentation" id="presentation">
+    <section className="presentation" id="presentation">
       <div className="my-presentation">
         <h1 style={ {fontSize: '1.75rem'} }>Eleomar Pedro Lorenzo</h1>
         <h2 style={ {fontSize: '1.5rem'} }>Desarrollador web</h2>

@@ -7,7 +7,7 @@ import '../styles/projects.css';
 
 const Projects = () => {
   return (
-    <section className="contact px-4" id="projects">
+    <section className="contact" id="projects">
       <SubtopicSection>Proyectos</SubtopicSection>
       <p className="mt-3 pb-4">
         Bienvenido a mi portafolio, aquí te muestro algunos de mis trabajos,

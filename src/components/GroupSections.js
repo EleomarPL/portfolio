@@ -8,7 +8,7 @@ const Skills = React.lazy(() => import('../sections/Skills'));
 
 const GroupSection = () => {
   return (
-    <main>
+    <main className="px-sm-4">
       <Presentation />
       <Suspense fallback={ <SpinnerLoading /> }>
         <Skills />
