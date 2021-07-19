@@ -8,10 +8,7 @@
   width: 48%;
   margin-bottom: 1rem;
 }
-.img-background{
-  transition: all .5s ease-in-out;
-}
-.img-background > img{
+.img-background > picture > img {
   position: absolute;
   opacity: 0.1;
   z-index: -1;
@@ -21,11 +18,6 @@
 
   width: 100%;
   height: 100%;
-
-  
-}
-.img-background:hover{
-  transform: rotate(10deg);
 }
 
 @media screen and (max-width: 600px){

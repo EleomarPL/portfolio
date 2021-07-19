@@ -1,7 +1,6 @@
 import React from 'react';
 
 import '../styles/presentation.css';
-import imageMe from '../img/myImage.webp';
 
 const Presentation = () => {
   return (
@@ -13,8 +12,15 @@ const Presentation = () => {
       <div className="row row-cols-md-2 align-items-center justify-content-end">
         <div className="container-photo">
           <div className="my-photo">
-            <img src={ imageMe } alt="Imagen de presentación"
-              className="img" />
+            <picture>
+              <source
+                srcSet={ require('../img/myImage.webp').default }
+              />
+              <img
+                src={ require('../img/myImage.png').default }
+                alt="Imagen de presentación"
+              />
+            </picture>
           </div>
         </div>
         <div className="text-justify info-me">

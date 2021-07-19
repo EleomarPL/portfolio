@@ -1,17 +1,19 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 import ContactIcon from '../cards/ContactIcon';
 import NavigationOptions from '../cards/NavigationOptions';
-
-import myPhoto from '../../img/myPhoto.jpg';
-
-import PropTypes from 'prop-types';
 
 const DesktopDevice = ({ listIconContact, listNavigationOptions }) => {
   return (
     <nav className="navigation d-flex flex-column align-items-center text-center" style={ {width: '23%'} }>
       <div className="container-image-me">
-        <img src={ myPhoto } alt="Me" />
+        <picture>
+          <source
+            srcSet={ require('../../img/myPhoto.webp').default }
+          />
+          <img src={ require('../../img/myPhoto.png').default } alt="Me" />
+        </picture>
       </div>
       <h3>Eleomar Pedro Lorenzo</h3>
       <p className="mt-2">

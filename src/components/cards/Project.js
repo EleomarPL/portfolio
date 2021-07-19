@@ -15,10 +15,15 @@ const Project = ({title, listOfTechnologies, nameImage, information, preview, re
   return (
     <article className="project">
       <div className="img-background">
-        <img
-          src={ require(`../../img/projects/${nameImage === undefined ? 'inProgress.webp' : nameImage}`).default }
-          alt={ nameImage === undefined ? 'En proceso' : nameImage }
-        />
+        <picture>
+          <source
+            srcSet={ require(`../../img/projects/${nameImage === undefined ? 'inProgress' : nameImage}.webp`).default }
+          />
+          <img
+            src={ require(`../../img/projects/${nameImage === undefined ? 'inProgress' : nameImage}.png`).default }
+            alt={ nameImage === undefined ? 'En proceso' : nameImage }
+          />
+        </picture>
       </div>
       <div className="p-4 information">
         <p style={ {'fontSize': '1.3rem', 'fontWeight': 'bold'} }>

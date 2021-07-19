@@ -11,7 +11,7 @@
 }
 .container-photo{ width: 25%; }
 .info-me{ width: 70%; }
-.my-photo > img {
+.my-photo > picture > img {
   width: 100%;
   height: 100%;
   

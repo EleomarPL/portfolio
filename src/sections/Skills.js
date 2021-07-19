@@ -28,14 +28,19 @@ const Skills = () => {
                       className="img-skills"
                       key={ img }
                     >
-                      <img
-                        src={
-                          require(
-                            `../img/skills/${img}.webp`
-                          ).default
-                        }
-                        alt={ img }
-                      />
+                      <picture>
+                        <source
+                          srcSet={ require(`../img/skills/${img}.webp`).default }
+                        />
+                        <img
+                          src={
+                            require(
+                              `../img/skills/${img}.png`
+                            ).default
+                          }
+                          alt={ img }
+                        />
+                      </picture>
                     </div>
                   )
                 }
