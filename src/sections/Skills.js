@@ -16,23 +16,27 @@ const Skills = () => {
       </p>
       <div className="row row-cols-md-2 g-4">
         {
-          skills.map((object, index) =>
+          skills.map( object =>
             <div
               className="d-flex flex-column"
-              key={ index }
+              key={ object.title }
             >
-              <div className="img-skills d-flex align-items-center">
+              <div className="d-flex align-items-center">
                 {
                   object.images.map( img =>
-                    <img
-                      src={
-                        require(
-                          `../img/skills/${img}.webp`
-                        ).default
-                      }
-                      alt={ img }
+                    <div
+                      className="img-skills"
                       key={ img }
-                    />
+                    >
+                      <img
+                        src={
+                          require(
+                            `../img/skills/${img}.webp`
+                          ).default
+                        }
+                        alt={ img }
+                      />
+                    </div>
                   )
                 }
               </div>
