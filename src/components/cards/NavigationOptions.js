@@ -5,8 +5,10 @@ const NavigationOptions = ({ href, classNameIcon, textOption }) => {
 
   const changeClassNav = () => {
     let nav = document.getElementById('navigation-small-size');
-    nav.classList.toggle('active');
-    nav.classList.toggle('desactive');
+    if ( nav ) {
+      nav.classList.toggle('active');
+      nav.classList.toggle('desactive');
+    }
   };
 
   return (
