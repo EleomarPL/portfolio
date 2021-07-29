@@ -41,7 +41,7 @@ const Contact = () => {
           listIconContact.map((object, index) =>
             <a
               className="card-icon space-cards mb-2"
-              style={ {fontSize: '1.7rem', marginLeft: '2.5rem'} }
+              style={ {fontSize: '1.7rem', marginLeft: '1.5rem'} }
               href={ object.href }
               rel="noreferrer noopener"
               target="_blank"
