@@ -8,6 +8,10 @@ export const listIconContact = [
     'className': 'bi bi-linkedin'
   },
   {
+    'href': 'https://twitter.com/EleomarPedro',
+    'className': 'bi bi-twitter'
+  },
+  {
     'href': 'https://t.me/eleomarpl',
     'className': 'bi bi-telegram'
   },
