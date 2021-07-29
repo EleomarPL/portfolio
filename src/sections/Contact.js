@@ -64,7 +64,7 @@ const Contact = () => {
         </span>
         <span>
           <Question>¿Quieres mi correo electrónico?</Question>
-          <p>Con mucho gusto también te lo proporciono: eleomarpedrolorenzo@hotmail.com</p>
+          <p>Con mucho gusto también te lo proporciono: eleomarpedrolorenzo@gmail.com</p>
         </span>
         <span>
           <Question>¿De dónde soy?</Question>
