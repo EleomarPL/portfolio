@@ -1,10 +1,11 @@
-import React, {Suspense} from 'react';
+import {Suspense, lazy} from 'react';
+
 import Presentation from '../sections/Presentation';
 import SpinnerLoading from './common/SpinnerLoading';
 
-const Contact = React.lazy(() => import('../sections/Contact'));
-const Projects = React.lazy(() => import('../sections/Projects'));
-const Skills = React.lazy(() => import('../sections/Skills'));
+const Contact = lazy(() => import('../sections/Contact'));
+const Projects = lazy(() => import('../sections/Projects'));
+const Skills = lazy(() => import('../sections/Skills'));
 
 const GroupSection = () => {
   return (

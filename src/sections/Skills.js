@@ -1,5 +1,3 @@
-import React from 'react';
-
 import SubtopicSection from '../components/common/SubtopicSection';
 import {skills} from '../data/skills';
 

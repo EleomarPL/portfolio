@@ -1,5 +1,3 @@
-import React, {Fragment} from 'react';
-
 import ContactIcon from '../cards/ContactIcon';
 import NavigationOptions from '../cards/NavigationOptions';
 
@@ -14,7 +12,7 @@ const MobileDevice = ({ listIconContact, listNavigationOptions }) => {
 
 
   return (
-    <Fragment>
+    <>
       <nav className="navigation desactive pt-2" id="navigation-small-size">
         <section className="pt-2 d-flex flex-column align-items-center">
           {
@@ -46,7 +44,7 @@ const MobileDevice = ({ listIconContact, listNavigationOptions }) => {
           <span className="visually-hidden-focusable">Menú</span>
         </button>
       </div>
-    </Fragment>
+    </>
   );
 };
 

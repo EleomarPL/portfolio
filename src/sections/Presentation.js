@@ -1,5 +1,3 @@
-import React from 'react';
-
 import '../styles/presentation.css';
 
 const Presentation = () => {

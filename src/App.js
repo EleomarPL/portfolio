@@ -1,4 +1,4 @@
-import React, { Suspense } from 'react';
+import { Suspense, lazy } from 'react';
 
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -8,7 +8,7 @@ import Header from './components/Header';
 import GroupSection from './components/GroupSections';
 import SpinnerLoading from './components/common/SpinnerLoading';
 
-const Footer = React.lazy(() => import('./sections/Footer'));
+const Footer = lazy(() => import('./sections/Footer'));
 
 const App = () => {
   return (

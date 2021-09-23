@@ -1,9 +1,9 @@
-import React, { Fragment, Suspense, useEffect, useState } from 'react';
+import { Suspense, useEffect, useState, lazy } from 'react';
 
 import SpinnerLoading from './common/SpinnerLoading';
 import { listIconContact, listNavigationOptions } from '../data/header';
-const DesktopDevice = React.lazy(() => import('./header/DesktopDevice'));
-const MobileDevice = React.lazy(() => import('./header/MobileDevice'));
+const DesktopDevice = lazy(() => import('./header/DesktopDevice'));
+const MobileDevice = lazy(() => import('./header/MobileDevice'));
 
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import '../styles/header.css';
@@ -24,7 +24,7 @@ const Header = () => {
   }, []);
 
   return (
-    <Fragment>
+    <>
       { widthWindow > 900 ?
         <Suspense fallback={ <SpinnerLoading /> }>
           <DesktopDevice
@@ -40,7 +40,7 @@ const Header = () => {
           />
         </Suspense>
       }
-    </Fragment>
+    </>
   );
 };
 
