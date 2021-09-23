@@ -1,5 +1,9 @@
 .project{
   position: relative;
+  
+  overflow: hidden;
+  border-radius: 10px;
+  background-color: #0000000e;
 }
 .information{
   z-index: 1;
@@ -8,9 +12,9 @@
   width: 48%;
   margin-bottom: 1rem;
 }
-.img-background > picture > img {
+.img-background {
   position: absolute;
-  opacity: 0.1;
+  opacity: 0.2;
   z-index: -1;
   object-fit: cover;
 
@@ -18,6 +22,10 @@
 
   width: 100%;
   height: 100%;
+  transition: transform 0.5s ease-in-out;
+}
+.project:hover .img-background {
+  transform: rotate(15deg)
 }
 
 @media screen and (max-width: 600px){
