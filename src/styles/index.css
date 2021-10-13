@@ -1,5 +1,6 @@
 :root {
   --background-page: #1f333d;
+  --background-navigation: #091a2e;
   --background-bottom-active: linear-gradient(180deg, #3dc0d1 0%, #359fb9 100%) no-repeat;
   --nav: rgba(137, 194, 243, 0.3);
   --color-gradient1: rgba(234, 84, 84, 0.5);
@@ -7,12 +8,14 @@
   --background-footer: linear-gradient(180deg, #89c2f34d 0%, #4c84b44d 100%);
 
 	--color-light: #f9f9f9;
+
+  --fontw-letter: 200;
 }
 body {
   background: var(--background-page);
   
   color: var(--color-light);
-  font-weight: 200;
+  font-weight: var(--fontw-letter);
 }
 ::-webkit-scrollbar {
 	background: var(--nav);

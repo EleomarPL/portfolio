@@ -1,5 +1,5 @@
 .navigation{
-  background: #091a2e;
+  background: var(--background-navigation);
   left: 0;
   border: 0;
   position: fixed;

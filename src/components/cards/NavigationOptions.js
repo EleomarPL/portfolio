@@ -12,9 +12,10 @@ const NavigationOptions = ({ href, classNameIcon, textOption }) => {
 
   return (
     <a
-      className="text-white d-flex flex-column justify-content-center text-decoration-none "
+      className="d-flex flex-column justify-content-center text-decoration-none "
       href={ href }
       onClick={ changeClassNav }
+      style={ {color: 'var(--color-light)'} }
     >
       <p className="card-icon text-center fs-4">
         <i className={ classNameIcon }></i>
