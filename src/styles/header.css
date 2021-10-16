@@ -5,6 +5,8 @@
   position: fixed;
   height: 100vh;
   overflow-y: auto;
+
+  transition: all linear 0.3s;
 }
 .container-image-me {
   margin-top: 1rem;

@@ -16,6 +16,8 @@ body {
   
   color: var(--color-light);
   font-weight: var(--fontw-letter);
+
+  transition: all linear 0.3s;
 }
 ::-webkit-scrollbar {
 	background: var(--nav);
