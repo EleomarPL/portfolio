@@ -1,5 +1,16 @@
 export const listOfProjects = [
   {
+    title: 'SallEvent',
+    technologies: ['react', 'nodejs', 'express', 'js', 'bootstrap'],
+    nameImg: 'sallevent',
+    information: 'Implemente API Rest para la comunicación del backend y frontend, también comprendí la importancia de los Custom Hooks en ReactJS.',
+    linkToRepository: [
+      'https://github.com/EleomarPL/front-sallevent-frontend',
+      'https://github.com/EleomarPL/front-sallevent-backend'
+    ],
+    linkToPreview: 'https://frontsallevent.vercel.app/'
+  },
+  {
     title: 'App de calificaciones',
     technologies: ['nodejs', 'express', 'js', 'bootstrap'],
     nameImg: 'gestiocal',
