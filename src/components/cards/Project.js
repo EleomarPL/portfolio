@@ -65,14 +65,16 @@ const Project = ({title, listOfTechnologies, nameImage, information, preview, re
             ? <div className="links dropdown">
               <button
                 className="btn btn-danger dropdown-toggle w-100"
-                type="button" id="dropdownMenuButton1"
+                type="button" id={ title ? title.split(' ').join('') : 'dropdownMenuButton1' }
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
                 <i className="bi bi-github"> </i>
                 Repositorio
               </button>
-              <ul className="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton1">
+              <ul className="dropdown-menu dropdown-menu-dark"
+                aria-labelledby={ title ? title.split(' ').join('') : 'dropdownMenuButton1' }
+              >
                 <li>
                   <a
                     target="_blank"
