@@ -41,5 +41,29 @@ export const listOfProjects = [
     nameImg: 'toyStory',
     information: 'Aplicación de escritorio construida en colaboración con diferentes programadores, que intentara adivinar en que personaje de Toy Story estás pensando.',
     linkToRepository: 'https://github.com/EleomarPL/toy-story-character'
+  },
+  {
+    title: 'PetGram',
+    technologies: ['react', 'nodejs', 'express', 'js', 'bootstrap'],
+    nameImg: 'petgram',
+    information: 'Simulación básica de Instagram, enfocado solo a mascotas seleccionadas. Consumiendo una API externa para obtener las imágenes, siendo específicos, consumiendo la API de Pexels.',
+    linkToRepository: 'https://github.com/EleomarPL/petgram',
+    linkToPreview: 'https://petgram-umber-three.vercel.app/'
+  },
+  {
+    title: 'Todo App',
+    technologies: ['react', 'js', 'bootstrap', 'electron'],
+    nameImg: 'todoapp',
+    information: 'Aplicación para gestionar tareas o notas, teniendo la opción de crear nuevas notas, marcarlas como realizados y eliminarlos.',
+    linkToRepository: 'https://github.com/EleomarPL/react-todo-app',
+    linkToPreview: 'https://eleomarpl.github.io/react-todo-app/'
+  },
+  {
+    title: 'Yard Sale',
+    technologies: ['react', 'js', 'bootstrap'],
+    nameImg: 'yardsale',
+    information: 'Sitio web para simular una venta de garaje, aplicando operaciones básicas como filtrar productos y agregarlos al carrito, todo esto con datos volátiles.',
+    linkToRepository: 'https://github.com/EleomarPL/react-shop',
+    linkToPreview: 'https://yardsale-plum.vercel.app/'
   }
 ];
