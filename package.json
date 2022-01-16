@@ -41,6 +41,7 @@
   "devDependencies": {
     "@types/bootstrap": "^5.0.16",
     "eslint": "^7.29.0",
-    "eslint-plugin-react": "^7.24.0"
+    "eslint-plugin-react": "^7.24.0",
+    "mini-css-extract-plugin": "2.4.5"
   }
 }
