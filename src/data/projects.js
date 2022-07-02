@@ -22,6 +22,14 @@ export const listOfProjects = [
     linkToPreview: 'https://gestiocal.vercel.app/'
   },
   {
+    title: 'RickAndMorty',
+    technologies: ['react', 'js', 'bootstrap'],
+    nameImg: 'rickandmorty',
+    information: 'Sitio web para obtener información de la serie de rick y morty usando redux y redux-toolkit para manejar los estados.',
+    linkToRepository: 'https://github.com/EleomarPL/rick-and-morty-redux',
+    linkToPreview: 'https://rick-y-morty-redux.vercel.app/'
+  },
+  {
     title: 'Portafolio',
     technologies: ['react', 'js', 'bootstrap'],
     nameImg: 'portfolio',
