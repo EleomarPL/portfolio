@@ -9,9 +9,9 @@ const DesktopDevice = ({ listIconContact, listNavigationOptions }) => {
       <div className="container-image-me">
         <picture>
           <source
-            srcSet={ require('../../img/myPhoto.webp').default }
+            srcSet={ require('../../img/myPhoto.webp') }
           />
-          <img src={ require('../../img/myPhoto.png').default } alt="Me" />
+          <img src={ require('../../img/myPhoto.png') } alt="Me" />
         </picture>
       </div>
       <h3>Eleomar Pedro Lorenzo</h3>

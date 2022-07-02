@@ -1,12 +1,12 @@
+import styled from 'styled-components';
+
 import SubtopicSection from '../components/common/SubtopicSection';
 import Project from '../components/cards/Project';
 import {listOfProjects} from '../data/projects';
 
-import '../styles/projects.css';
-
 const Projects = () => {
   return (
-    <section className="contact" id="projects">
+    <ContainerPresentation id="projects">
       <SubtopicSection>Proyectos</SubtopicSection>
       <p className="mt-3 pb-4">
         Bienvenido a mi portafolio, aquí te muestro algunos de mis trabajos,
@@ -29,8 +29,12 @@ const Projects = () => {
           )
         }
       </div>
-    </section>
+    </ContainerPresentation>
   );
 };
+
+const ContainerPresentation = styled.section`
+  margin-top: 3rem;
+`;
 
 export default Projects;

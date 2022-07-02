@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+import styled from 'styled-components';
 
 const Project = ({title, listOfTechnologies, nameImage, information, preview, repository}) => {
   let styleByTechnology = {
@@ -12,20 +13,19 @@ const Project = ({title, listOfTechnologies, nameImage, information, preview, re
     electron: 'btn-primary'
   };
   return (
-    <article className="project">
+    <ContainerProject>
       <div>
         <picture>
           <source
-            srcSet={ require(`../../img/projects/${nameImage === undefined ? 'inProgress' : nameImage}.webp`).default }
+            srcSet={ require(`../../img/projects/${nameImage === undefined ? 'inProgress' : nameImage}.webp`) }
           />
-          <img
-            src={ require(`../../img/projects/${nameImage === undefined ? 'inProgress' : nameImage}.png`).default }
-            className="img-background"
+          <Image
+            src={ require(`../../img/projects/${nameImage === undefined ? 'inProgress' : nameImage}.png`) }
             alt={ nameImage === undefined ? 'En proceso' : nameImage }
           />
         </picture>
       </div>
-      <div className="p-4 information">
+      <ContainerInformation className="p-4">
         <p style={ {'fontSize': '1.3rem', 'fontWeight': 'bold'} }>
           <strong>{ title }</strong>
         </p>
@@ -50,19 +50,19 @@ const Project = ({title, listOfTechnologies, nameImage, information, preview, re
         </p>
         <div className="d-flex flex-wrap justify-content-around align-items-center" style={ {'fontSize': '0.6rem'} }>
           { preview !== undefined &&
-            <a
+            <LinkA
               target="_blank"
               rel="noreferrer"
               href={ preview }
-              className="btn btn-warning links"
+              className="btn btn-warning"
             >
               <i className="bi bi-symmetry-horizontal"></i>
               preview
-            </a>
+            </LinkA>
           }
           { repository !== undefined && repository !== null &&
             typeof repository !== 'string'
-            ? <div className="links dropdown">
+            ? <LinkB className="dropdown">
               <button
                 className="btn btn-danger dropdown-toggle w-100"
                 type="button" id={ title ? title.split(' ').join('') : 'dropdownMenuButton1' }
@@ -96,23 +96,65 @@ const Project = ({title, listOfTechnologies, nameImage, information, preview, re
                   </a>
                 </li>
               </ul>
-            </div>
+            </LinkB>
             : repository !== undefined &&
-              <a
+              <LinkA
                 target="_blank"
                 rel="noreferrer"
                 href={ repository }
-                className="btn btn-danger links"
+                className="btn btn-danger"
               >
                 <i className="bi bi-github"> </i>
                 Repositorio
-              </a>
+              </LinkA>
           }
         </div>
-      </div>
-    </article>
+      </ContainerInformation>
+    </ContainerProject>
   );
 };
+
+const Image = styled.img`
+  position: absolute;
+  opacity: 0.2;
+  z-index: -1;
+  object-fit: cover;
+
+  border-radius: 10px;
+
+  width: 100%;
+  height: 100%;
+  transition: transform 0.5s ease-in-out;
+`;
+const ContainerProject = styled.article`
+  position: relative;
+  
+  overflow: hidden;
+  border-radius: 10px;
+  background-color: #0000000e;
+  &:hover {
+    ${ Image } {
+      transform: rotate(15deg);
+    }
+  }
+`;
+const ContainerInformation = styled.div`
+  z-index: 1;
+`;
+const LinkA = styled.a`
+  width: 48%;
+  margin-bottom: 1rem;
+  @media only screen and (max-width: 700px) {
+    width: 80%;
+  }
+`;
+const LinkB = styled.div`
+  width: 48%;
+  margin-bottom: 1rem;
+  @media only screen and (max-width: 700px) {
+    width: 80%;
+  }
+`;
 
 Project.propTypes = {
   title: PropTypes.string.isRequired,

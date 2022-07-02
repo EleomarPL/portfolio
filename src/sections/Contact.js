@@ -1,34 +1,12 @@
 import PropTypes from 'prop-types';
+import styled from 'styled-components';
 
-import '../styles/contact.css';
 import SubtopicSection from '../components/common/SubtopicSection';
 import {listIconContact} from '../data/header';
 
-const Question = ({ children }) => {
-  return (
-    <p className="fw-bold" style={ {fontSize: '1.2rem'} }>
-      { children }
-    </p>
-  );
-};
-const CustomText = ({ children }) => {
-  return (
-    <strong className="fw-bold text-decoration-underline">
-      <i>{ ' ' + children }</i>
-    </strong>
-  );
-};
-
-Question.propTypes = {
-  children: PropTypes.node.isRequired
-};
-CustomText.propTypes = {
-  children: PropTypes.node.isRequired
-};
-
 const Contact = () => {
   return (
-    <section className="contact" id="contact">
+    <ContainerContact id="contact">
       <SubtopicSection>Contacto</SubtopicSection>
       <p className="mt-3 pb-4">
         ¡Hola!!, ¿Te gustaría contactarme?, o ¿Quieres que colabore en
@@ -78,8 +56,34 @@ const Contact = () => {
           </p>
         </span>
       </div>
-    </section>
+    </ContainerContact>
   );
+};
+
+const ContainerContact = styled.section`
+  margin-top: 3rem;
+`;
+
+const Question = ({ children }) => {
+  return (
+    <p className="fw-bold" style={ {fontSize: '1.2rem'} }>
+      { children }
+    </p>
+  );
+};
+const CustomText = ({ children }) => {
+  return (
+    <strong className="fw-bold text-decoration-underline">
+      <i>{ ' ' + children }</i>
+    </strong>
+  );
+};
+
+Question.propTypes = {
+  children: PropTypes.node.isRequired
+};
+CustomText.propTypes = {
+  children: PropTypes.node.isRequired
 };
 
 export default Contact;

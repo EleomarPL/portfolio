@@ -1,11 +1,11 @@
+import styled from 'styled-components';
+
 import SubtopicSection from '../components/common/SubtopicSection';
 import {skills} from '../data/skills';
 
-import '../styles/skills.css';
-
 const Skills = () => {
   return (
-    <section className="skills">
+    <ContainerSkill>
       <SubtopicSection>Mis habilidades</SubtopicSection>
       <p className="mt-3 pb-4">
         No tengo suficiente experiencia laboral, pero estoy en constante
@@ -22,24 +22,23 @@ const Skills = () => {
               <div className="d-flex align-items-center">
                 {
                   object.images.map( img =>
-                    <div
-                      className="img-skills"
+                    <ContainerImage
                       key={ img }
                     >
                       <picture>
                         <source
-                          srcSet={ require(`../img/skills/${img}.webp`).default }
+                          srcSet={ require(`../img/skills/${img}.webp`) }
                         />
-                        <img
+                        <Image
                           src={
                             require(
                               `../img/skills/${img}.png`
-                            ).default
+                            )
                           }
                           alt={ img }
                         />
                       </picture>
-                    </div>
+                    </ContainerImage>
                   )
                 }
               </div>
@@ -49,8 +48,30 @@ const Skills = () => {
           )
         }
       </div>
-    </section>
+    </ContainerSkill>
   );
 };
+
+const ContainerSkill = styled.section`
+  margin-top: 2rem;
+  padding-top: 4rem;
+  @media only screen and (max-width: 900px) {
+    padding-top: 0;
+  }
+  @media only screen and (max-width: 768px) {
+    margin-top: 1rem;
+  }
+`;
+const ContainerImage = styled.div`
+  width: 3rem;
+  height: 3rem;
+
+  margin-right: 0.5rem;
+`;
+const Image = styled.img`
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+`;
 
 export default Skills;
