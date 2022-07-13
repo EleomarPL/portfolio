@@ -1,4 +1,3 @@
-import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
 import SubtopicSection from '../components/common/SubtopicSection';
@@ -14,7 +13,7 @@ const Contact = () => {
         que yo estaré encantado de charlar contigo.
       </p>
       <div className="d-flex flex-wrap justify-content-center">
-        {
+        { listIconContact &&
           listIconContact.map((object, index) =>
             <a
               className="card-icon space-cards mb-2"
@@ -25,36 +24,54 @@ const Contact = () => {
               key={ index }
             >
               <i className={ object.className }></i>
-              <span className="visually-hidden-focusable">{ object.className.split(' ')[1].slice(3) }</span>
+              <span className="visually-hidden-focusable">
+                { object.className.split(' ')[1].slice(3) }
+              </span>
             </a>
           )
         }
       </div>
-      <div
-        className="row row-cols-md-2 g-4 pt-4"
-      >
-        <span>
+      <div className="row row-cols-md-2 g-4 pt-4">
+        <div>
           <Question>¿Puedes llamarme?</Question>
-          <p>Por supuesto, este es mi numero:
-            <CustomText>+52 958 187 2761</CustomText>
+          <p>
+            Por supuesto, este es mi numero:
+            <CustomText href="tel:+529581872761"
+              target="_blank"
+              title="Llamar a Eleomar Pedro Lorenzo"
+              rel="noreferrer noopener"
+            >
+              +52 958 187 2761
+            </CustomText>
           </p>
-        </span>
-        <span>
+        </div>
+        <div>
           <Question>¿Quieres mi correo electrónico?</Question>
-          <p>Con mucho gusto también te lo proporciono: eleomarpedrolorenzo@gmail.com</p>
-        </span>
-        <span>
+          <p>
+            Con mucho gusto también te lo proporciono:
+            <CustomText href="mailto:eleomarpedrolorenzo@gmail.com"
+              target="_blank"
+              title="Enviar correo electrónico"
+              rel="noreferrer noopener"
+            >
+              eleomarpedrolorenzo@gmail.com
+            </CustomText>
+          </p>
+        </div>
+        <div>
           <Question>¿De dónde soy?</Question>
-          <p>Bueno, soy de Cañada Brava, perteneciente a Santo Domingo de Morelos,
+          <p>
+            Bueno, soy de Cañada Brava, perteneciente a Santo Domingo de Morelos,
             del distrito Pochutla, estado Oaxaca, y sí, soy orgullosamente mexicano
           </p>
-        </span>
-        <span>
+        </div>
+        <div>
           <Question>¿Cambiaría de residencia?</Question>
-          <p>Por supuesto, estoy egresando de mi universidad, y
+          <p>
+            Por supuesto, estoy egresando de mi universidad, y
             como todos, estoy en busca de oportunidades
           </p>
-        </span>
+        </div>
       </div>
     </ContainerContact>
   );
@@ -63,27 +80,19 @@ const Contact = () => {
 const ContainerContact = styled.section`
   margin-top: 3rem;
 `;
-
-const Question = ({ children }) => {
-  return (
-    <p className="fw-bold" style={ {fontSize: '1.2rem'} }>
-      { children }
-    </p>
-  );
-};
-const CustomText = ({ children }) => {
-  return (
-    <strong className="fw-bold text-decoration-underline">
-      <i>{ ' ' + children }</i>
-    </strong>
-  );
-};
-
-Question.propTypes = {
-  children: PropTypes.node.isRequired
-};
-CustomText.propTypes = {
-  children: PropTypes.node.isRequired
-};
+const Question = styled.p`
+  font-weight: bold;
+  font-size: 1.2rem;
+`;
+const CustomText = styled.a`
+  color: var(--color-primary);
+  text-decoration: underline;
+  cursor: pointer;
+  font-weight: bold;
+  margin-left: 5px;
+  &:hover {
+    color: var(--color-primary);
+  }
+`;
 
 export default Contact;
