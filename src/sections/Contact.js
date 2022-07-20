@@ -54,7 +54,7 @@ const Contact = () => {
               title="Enviar correo electrónico"
               rel="noreferrer noopener"
             >
-              eleomarpedrolorenzo@gmail.com
+              eleomarpedrolorenzo @gmail.com
             </CustomText>
           </p>
         </div>
