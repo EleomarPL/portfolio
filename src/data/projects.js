@@ -1,14 +1,17 @@
 export const listOfProjects = [
   {
-    title: 'SallEvent',
-    technologies: ['react', 'nodejs', 'express', 'js', 'bootstrap'],
-    nameImg: 'sallevent',
-    information: 'Implemente API Rest para la comunicación del backend y frontend, también comprendí la importancia de los Custom Hooks en ReactJS.',
-    linkToRepository: [
-      'https://github.com/EleomarPL/front-sallevent-frontend',
-      'https://github.com/EleomarPL/front-sallevent-backend'
-    ],
-    linkToPreview: 'https://frontsallevent.vercel.app/'
+    title: 'TNM LI',
+    technologies: ['react', 'laravel', 'php', 'js', 'bootstrap'],
+    nameImg: 'tnm',
+    information: 'Proyecto exclusivo para estudiantes y/o personal administrativos de tecnológicos registrados en el sistema. Este sistema contiene las funcionalidades necesarias para acortar enlaces.',
+    linkToPreview: 'https://tnm.li/'
+  },
+  {
+    title: 'Aprendamos Zapoteco Del Sur',
+    technologies: ['react', 'js', 'bootstrap', 'electron'],
+    information: 'Aplicación de escritorio, creada en colaboración con demás programadores, usando las tecnologías ElectronJS, y ReactJS para las vistas, así como también Bootstrap5 para estilizar la aplicación.',
+    nameImg: 'learnZapoteco',
+    linkToPreview: 'https://aprendamoszapoteco.github.io/'
   },
   {
     title: 'App de calificaciones',
@@ -22,7 +25,7 @@ export const listOfProjects = [
     linkToPreview: 'https://gestiocal.vercel.app/'
   },
   {
-    title: 'RickAndMorty',
+    title: 'Rick y Morty',
     technologies: ['react', 'js', 'bootstrap'],
     nameImg: 'rickandmorty',
     information: 'Sitio web para obtener información de la serie de rick y morty usando redux y redux-toolkit para manejar los estados.',
@@ -30,18 +33,15 @@ export const listOfProjects = [
     linkToPreview: 'https://rick-y-morty-redux.vercel.app/'
   },
   {
-    title: 'Portafolio',
-    technologies: ['react', 'js', 'bootstrap'],
-    nameImg: 'portfolio',
-    information: 'Este es mi portafolio, espero que lo estés disfrutando, está hecho con ReactJS, JavaScript y Bootstrap5.',
-    linkToRepository: 'https://github.com/EleomarPL/portfolio'
-  },
-  {
-    title: 'Aprendamos Zapoteco Del Sur',
-    technologies: ['react', 'js', 'bootstrap', 'electron'],
-    information: 'Aplicación de escritorio, creada en colaboración con demás programadores, usando las tecnologías ElectronJS, y ReactJS para las vistas, así como también Bootstrap5 para estilizar la aplicación.',
-    nameImg: 'learnZapoteco',
-    linkToPreview: 'https://aprendamoszapoteco.github.io/'
+    title: 'SallEvent',
+    technologies: ['react', 'nodejs', 'express', 'js', 'bootstrap'],
+    nameImg: 'sallevent',
+    information: 'Implemente API Rest para la comunicación del backend y frontend, también comprendí la importancia de los Custom Hooks en ReactJS.',
+    linkToRepository: [
+      'https://github.com/EleomarPL/front-sallevent-frontend',
+      'https://github.com/EleomarPL/front-sallevent-backend'
+    ],
+    linkToPreview: 'https://frontsallevent.vercel.app/'
   },
   {
     title: 'Personajes de Toy Story',
@@ -59,12 +59,19 @@ export const listOfProjects = [
     linkToPreview: 'https://petgram-umber-three.vercel.app/'
   },
   {
+    title: 'Lista de Deudas',
+    technologies: ['react', 'js', 'bootstrap', 'electron'],
+    nameImg: 'listDebts',
+    information: 'Aplicación de escritorio, que surgió ante la necesidad de gestionar deudas personalizadas, con el fin de controlar deudas de productos en pagos o con un adelanto.',
+    linkToRepository: 'https://github.com/EleomarPL/list-debts-electron'
+  },
+  {
     title: 'Todo App',
     technologies: ['react', 'js', 'bootstrap', 'electron'],
-    nameImg: 'todoapp',
+    nameImg: 'todo',
     information: 'Aplicación para gestionar tareas o notas, teniendo la opción de crear nuevas notas, marcarlas como realizados y eliminarlos.',
-    linkToRepository: 'https://github.com/EleomarPL/react-todo-app',
-    linkToPreview: 'https://eleomarpl.github.io/react-todo-app/'
+    linkToRepository: 'https://github.com/EleomarPL/react-todo-app-typescript',
+    linkToPreview: 'https://todoapp-pwa.vercel.app/'
   },
   {
     title: 'Yard Sale',
