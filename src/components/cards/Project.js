@@ -10,7 +10,9 @@ const Project = ({title, listOfTechnologies, nameImage, information, preview, re
     nodejs: 'btn-success',
     express: 'btn-light',
     bootstrap: 'btn-secondary',
-    electron: 'btn-primary'
+    electron: 'btn-primary',
+    laravel: 'btn-danger',
+    php: 'btn-secondary'
   };
   return (
     <ContainerProject>
