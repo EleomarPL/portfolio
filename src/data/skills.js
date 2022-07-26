@@ -31,6 +31,16 @@ export const skills = [
     images: ['mongodb', 'mysql']
   },
   {
+    title: 'Laravel',
+    description: 'Para desarrollar aplicaciones en el lado del backend, también uso el framework de PHP Laravel.',
+    images: ['laravel']
+  },
+  {
+    title: 'Composer y NPM',
+    description: 'Para gestionar dependencias de JavaScript y PHP, uso NPM y Composer.',
+    images: ['composer', 'npm']
+  },
+  {
     title: 'Git y GitHub',
     description: 'Para el control de versiones de mis proyectos uso Git, y Github para alojar estos proyectos.',
     images: ['git', 'github']
