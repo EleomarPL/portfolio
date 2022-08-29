@@ -31,6 +31,11 @@ export const skills = [
     images: ['mongodb', 'mysql']
   },
   {
+    title: 'Docker',
+    description: 'Para crear espacios de desarrollo, generalmente uso Docker.',
+    images: ['docker']
+  },
+  {
     title: 'Laravel',
     description: 'Para desarrollar aplicaciones en el lado del backend, también uso el framework de PHP Laravel.',
     images: ['laravel']
