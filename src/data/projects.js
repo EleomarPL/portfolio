@@ -14,6 +14,13 @@ export const listOfProjects = [
     linkToPreview: 'https://aprendamoszapoteco.github.io/'
   },
   {
+    title: 'Sistema control escolar',
+    technologies: ['react', 'php', 'laravel', 'js', 'bootstrap'],
+    information: 'Sistema para el control escolar de la escuela secundaria técnica núm 206 de roque, San Pedro Pochutla. Construido sobre el framework Laravel y ReactJS para el frontend.',
+    nameImg: 'technics',
+    linkToPreview: 'https://tecnica206.com/'
+  },
+  {
     title: 'App de calificaciones',
     technologies: ['nodejs', 'express', 'js', 'bootstrap'],
     nameImg: 'gestiocal',
