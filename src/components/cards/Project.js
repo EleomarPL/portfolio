@@ -12,7 +12,8 @@ const Project = ({title, listOfTechnologies, nameImage, information, preview, re
     bootstrap: 'btn-secondary',
     electron: 'btn-primary',
     laravel: 'btn-danger',
-    php: 'btn-secondary'
+    php: 'btn-secondary',
+    nextui: 'btn-primary'
   };
   return (
     <ContainerProject>
