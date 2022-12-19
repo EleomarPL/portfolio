@@ -11,9 +11,9 @@ export const skills = [
     images: ['javascript']
   },
   {
-    title: 'Bootstrap 4/5',
+    title: 'Bootstrap 4/5 y NextUI',
     description: 'Lo uso en proyectos donde requiera ser eficiente al aplicar estilos. ',
-    images: ['bootstrap']
+    images: ['bootstrap', 'nextui']
   },
   {
     title: 'ReactJS',
@@ -51,9 +51,9 @@ export const skills = [
     images: ['git', 'github']
   },
   {
-    title: 'Heroku y Vercel',
-    description: 'Para desplegar mis proyectos uso Heroku para el backend y vercel para el frontend.',
-    images: ['heroku', 'vercel']
+    title: 'Railway y Vercel',
+    description: 'Para desplegar mis proyectos uso Railway para el backend y vercel para el frontend.',
+    images: ['railway', 'vercel']
   },
   {
     title: 'VSC y Figma',
