@@ -3,8 +3,7 @@ export const listOfProjects = [
     title: 'TNM LI',
     technologies: ['react', 'laravel', 'php', 'js', 'bootstrap'],
     nameImg: 'tnm',
-    information: 'Proyecto exclusivo para estudiantes y/o personal administrativos de tecnológicos registrados en el sistema. Este sistema contiene las funcionalidades necesarias para acortar enlaces.',
-    linkToPreview: 'https://tnm.li/'
+    information: 'Proyecto exclusivo para estudiantes y/o personal administrativos de tecnológicos registrados en el sistema. Este sistema contiene las funcionalidades necesarias para acortar enlaces.'
   },
   {
     title: 'Aprendamos Zapoteco Del Sur',
@@ -21,8 +20,14 @@ export const listOfProjects = [
     linkToPreview: 'https://tecnica206.com/'
   },
   {
+    title: 'Punto de venta (versión prueba)',
+    technologies: ['react', 'js', 'electron', 'bootstrap'],
+    information: 'Software punto de venta de escritorio con las funcionalidades básicas para crear cajeros, generar reportes de ventas y compras, gestionar compras, ventas, proveedores, deudas y deudores.',
+    linkToRepository: 'https://github.com/EleomarPL/point-of-sale'
+  },
+  {
     title: 'App de calificaciones',
-    technologies: ['nodejs', 'express', 'js', 'bootstrap'],
+    technologies: ['nodejs', 'express', 'js', 'nextui'],
     nameImg: 'gestiocal',
     information: 'Aprendí a autenticar usuarios en el backend, y manipular rutas en react. Implemente igual la comunicación entre backend y frontend mediante APIs Rest.',
     linkToRepository: [
@@ -59,7 +64,7 @@ export const listOfProjects = [
   },
   {
     title: 'PetGram',
-    technologies: ['react', 'nodejs', 'express', 'js', 'bootstrap'],
+    technologies: ['react', 'nodejs', 'express', 'js', 'nextui'],
     nameImg: 'petgram',
     information: 'Simulación básica de Instagram, enfocado solo a mascotas seleccionadas. Consumiendo una API externa para obtener las imágenes, siendo específicos, consumiendo la API de Pexels.',
     linkToRepository: 'https://github.com/EleomarPL/petgram',
