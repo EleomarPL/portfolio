@@ -23,7 +23,7 @@ const Presentation = () => {
         </ContainerPhoto>
         <InformationMe className="text-justify">
           <p>
-            ¡Hola !!, soy un estudiante de Ingeniería en Sistemas Computacionales
+            ¡Hola !!, soy Ingeniero en Sistemas Computacionales
             y me especializo en el desarrollo frontend y backend de páginas web,
             con más tendencia en el front-end.
           </p>
