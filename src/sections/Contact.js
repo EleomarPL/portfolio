@@ -33,28 +33,15 @@ const Contact = () => {
       </div>
       <div className="row row-cols-md-2 g-4 pt-4">
         <div>
-          <Question>¿Puedes llamarme?</Question>
-          <p>
-            Por supuesto, este es mi numero:
-            <CustomText href="tel:+529581872761"
-              target="_blank"
-              title="Llamar a Eleomar Pedro Lorenzo"
-              rel="noreferrer noopener"
-            >
-              +52 958 187 2761
-            </CustomText>
-          </p>
-        </div>
-        <div>
           <Question>¿Quieres mi correo electrónico?</Question>
           <p>
-            Con mucho gusto también te lo proporciono:
+            Con mucho gusto te lo proporciono:
             <CustomText href="mailto:eleomarpedrolorenzo@gmail.com"
               target="_blank"
               title="Enviar correo electrónico"
               rel="noreferrer noopener"
             >
-              eleomarpedrolorenzo @gmail.com
+              Envía correo aquí
             </CustomText>
           </p>
         </div>

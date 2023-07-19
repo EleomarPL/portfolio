@@ -10,14 +10,6 @@ export const listIconContact = [
   {
     'href': 'https://twitter.com/EleomarPedro',
     'className': 'bi bi-twitter'
-  },
-  {
-    'href': 'https://t.me/eleomarpl',
-    'className': 'bi bi-telegram'
-  },
-  {
-    'href': 'https://www.instagram.com/eleomarpedrolorenzo/',
-    'className': 'bi bi-instagram'
   }
 ];
 export const listNavigationOptions = [
