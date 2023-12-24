@@ -9,9 +9,15 @@ const DesktopDevice = ({ listIconContact, listNavigationOptions }) => {
       <div className="container-image-me">
         <picture>
           <source
-            srcSet={ require('../../img/myPhoto.webp') }
+            srcSet={
+              new URL('../../img/myPhoto.webp', import.meta.url).href
+              //require('../../img/myPhoto.webp')
+            }
           />
-          <img src={ require('../../img/myPhoto.png') } alt="Me" />
+          <img src={
+            new URL('../../img/myPhoto.png', import.meta.url).href
+            //require('../../img/myPhoto.png')
+          } alt="Me" />
         </picture>
       </div>
       <h3>Eleomar Pedro Lorenzo</h3>

@@ -20,10 +20,16 @@ const Project = ({title, listOfTechnologies, nameImage, information, preview, re
       <div>
         <picture>
           <source
-            srcSet={ require(`../../img/projects/${nameImage === undefined ? 'inProgress' : nameImage}.webp`) }
+            srcSet={
+              new URL(`../../img/projects/${nameImage === undefined ? 'inProgress' : nameImage}.webp`, import.meta.url).href
+              //require(`../../img/projects/${nameImage === undefined ? 'inProgress' : nameImage}.webp`)
+            }
           />
           <Image
-            src={ require(`../../img/projects/${nameImage === undefined ? 'inProgress' : nameImage}.png`) }
+            src={
+              new URL(`../../img/projects/${nameImage === undefined ? 'inProgress' : nameImage}.png`, import.meta.url).href
+              //require(`../../img/projects/${nameImage === undefined ? 'inProgress' : nameImage}.png`)
+            }
             alt={ nameImage === undefined ? 'En proceso' : nameImage }
           />
         </picture>
@@ -40,7 +46,7 @@ const Project = ({title, listOfTechnologies, nameImage, information, preview, re
             listOfTechnologies.map( technology =>
               <div
                 key={ technology }
-                className={ styleByTechnology[technology] + ' p-1 mb-2 px-2' }
+                className={ 'btn ' + styleByTechnology[technology] + ' p-1 mb-2 px-2' }
                 style={ {'borderRadius': '5px', marginRight: '1rem'} }
               >
                 <strong>{ technology }</strong>

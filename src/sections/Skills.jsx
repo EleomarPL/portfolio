@@ -27,13 +27,17 @@ const Skills = () => {
                     >
                       <picture>
                         <source
-                          srcSet={ require(`../img/skills/${img}.webp`) }
+                          srcSet={
+                            new URL(`../img/skills/${img}.webp`, import.meta.url).href
+                            //require(`../img/skills/${img}.webp`)
+                          }
                         />
                         <Image
                           src={
-                            require(
-                              `../img/skills/${img}.png`
-                            )
+                            //require(
+                            //  `../img/skills/${img}.png`
+                            //)
+                            new URL(`../img/skills/${img}.png`, import.meta.url).href
                           }
                           alt={ img }
                         />

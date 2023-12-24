@@ -12,10 +12,16 @@ const Presentation = () => {
           <ContainerImage>
             <picture>
               <source
-                srcSet={ require('../img/myImage.webp') }
+                srcSet={
+                  new URL('../img/myImage.webp', import.meta.url).href
+                  //require('../img/myImage.webp')
+                }
               />
               <Image
-                src={ require('../img/myImage.png') }
+                src={
+                  new URL('../img/myImage.png', import.meta.url).href
+                  //require('../img/myImage.png')
+                }
                 alt="Imagen de presentación"
               />
             </picture>
