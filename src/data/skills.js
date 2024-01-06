@@ -16,9 +16,19 @@ export const skills = [
     images: ['bootstrap', 'nextui']
   },
   {
+    title: 'PrimeNG y PrimeReact',
+    description: 'Los uso para ser eficiente al aplicar estilos con componentes.',
+    images: ['primeng', 'primereact']
+  },
+  {
     title: 'ReactJS',
     description: 'Es la librería que uso para desarrollar de lado del frontend, con el manejo de hooks, consumo de APIs, etc.',
     images: ['reactjs']
+  },
+  {
+    title: 'AngularTS',
+    description: 'Un hermoso framework para el desarrollo frontend, reutilizando codigo en componentes.',
+    images: ['angular']
   },
   {
     title: 'Nodejs y Expressjs',
