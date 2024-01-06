@@ -8,9 +8,10 @@ const Skills = () => {
     <ContainerSkill>
       <SubtopicSection>Mis habilidades</SubtopicSection>
       <p className="mt-3 pb-4">
-        No tengo suficiente experiencia laboral, pero estoy en constante
-        aprendizaje y participando en proyectos locales, y a continuación
-        muestro mis principales habilidades de manera general.
+      Mi enfoque se centra en la creación de aplicaciones web
+      eficientes y escalables, utilizando tecnologías modernas
+      siguiendo las mejores prácticas de la industria, y a
+      continuación muestro mis principales habilidades de manera general.
       </p>
       <div className="row row-cols-md-2 g-4">
         {
