@@ -17,7 +17,6 @@ export const listOfProjects = [
     technologies: ['react', 'php', 'laravel', 'js', 'bootstrap'],
     information: 'Sistema para el control escolar de la escuela secundaria técnica núm 206 de roque, San Pedro Pochutla. Construido sobre el framework Laravel y ReactJS para el frontend.',
     nameImg: 'technics',
-    linkToPreview: 'https://tecnica206.com/'
   },
   {
     title: 'Punto de venta (versión prueba)',
