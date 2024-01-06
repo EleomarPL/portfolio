@@ -3,7 +3,7 @@ import styled from 'styled-components';
 const Footer = () => {
   return (
     <FooterContainer className="d-flex flex-wrap justify-content-center text-center">
-      <p>&#169; 2021, Creado con 💚💚 por <span className="fw-bold">Eleomar Pedro Lorenzo</span></p>
+      <p>&#169; 2024, Creado con 💚💚 por <span className="fw-bold">Eleomar Pedro Lorenzo</span></p>
     </FooterContainer>
   );
 };
