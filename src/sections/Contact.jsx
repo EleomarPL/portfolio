@@ -55,8 +55,10 @@ const Contact = () => {
         <div>
           <Question>¿Cambiaría de residencia?</Question>
           <p>
-            Por supuesto, estoy egresando de mi universidad, y
-            como todos, estoy en busca de oportunidades
+            Por supuesto, mi pasión por el desarrollo web/software 
+            y mi disposición para adaptarme a nuevos entornos hacen 
+            que esté listo/a para enfrentar desafíos emocionantes 
+            en cualquier parte del mundo
           </p>
         </div>
       </div>
